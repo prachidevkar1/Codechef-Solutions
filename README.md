@@ -145,3 +145,98 @@ class Codechef
 }
 
 
+## Count of Digits et's assume the number of digits in N is x.Whenever we divide a number by 10 and store it in an integer, the right-most digit of that number gets removed.Since  digit gets removed each time we divide a number by 10 thus the total number digits we can remove from a number are the total number of digits in the number.
+import java.util.Scanner;
+
+class Codechef
+{
+	public static void main (String[] args) 
+	{
+		Scanner scanner = new Scanner(System.in);
+        int num, count = 0;
+        num = scanner.nextInt();
+
+        while (num != 0) {
+	
+            num=(num/10);  //removing last digit
+            count++;      //tracking the number of divisions
+            
+        }
+        System.out.println(count);
+	}
+}
+
+
+## Prime number 
+
+public static void main (String[] args) 
+	{
+		Scanner scanner = new Scanner(System.in);
+
+        int n = scanner.nextInt();
+    
+        boolean isPrime = true; // Assum n is prime.
+
+        for(int i=2;i<n;i++)
+        {
+            if(n % i==0)
+            {
+                isPrime=false;
+            }
+           
+        }
+        if (isPrime) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+	}
+}
+
+
+## create a square pattern of integer N
+import java.util.Scanner;
+
+class Codechef
+{
+	public static void main (String[] args)
+	{  
+	    int i=1;
+		Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+          for(i=1;i<=n;i++)
+          {
+              for(int j=1;j<=n;j++)
+              {
+                  System.out.print(" *");
+                  
+              }
+              System.out.println();
+          }
+           
+	}
+}
+
+## print Number patteren Right angled Triangle
+import java.util.Scanner;
+
+class Codechef
+{
+	public static void main (String[] args) 
+	{
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(j +" ");
+            }
+            System.out.println();
+        }
+
+	}
+}
+
+
