@@ -270,4 +270,79 @@ class Codechef
 	}
 }
 
+## Deletion from an array
+Deleting elements from a 1D array involves removing an element from a specific position within the array and then shifting the remaining elements to fill the gap.
+Determine the Position:
+Shift Elements: Starting from the position of the element to be deleted, move each element one position to the left until you reach the end of the array. This fills the gap left by the deleted element.
+Update Array Size
+
+import java.util.Scanner;
+class Codechef
+{
+	public static void main (String[] args) 
+	{
+		int[] array = new int[100]; 
+			int[] arrays = new int[100]; // Initial array
+            array[0] = 2;      
+	    array[1] = 4;
+	    array[2] = 6;
+	    array[3] = 8;
+	    array[4] = 10;
+        int size = 5; // Current size of the array
+
+        int positionToDelete = 2; // Index of the element to delete
+
+        // Update the code to shift elements to fill the gap left by the deleted element
+        
+           for(int i=positionToDelete;i<size-1;i++)
+           {
+               array[i]=array[i + 1];
+           }
+           size--;
+           
+               
+        // Print the updated array
+        for (int i = 0; i < size; i++) {
+            System.out.print(array[i] + " ");
+        }
+	}
+}
+
+## Insertion in an array
+Inserting elements into a 1D array involves adding a new element at a specific position within the array.
+import java.util.Scanner;
+
+class Codechef
+{
+	public static void main (String[] args) 
+	{
+	    int []array = new int[100];
+	    array[0] = 2;
+	    array[1] = 4;
+	    array[2] = 6;
+	    array[3] = 8;
+	    array[4] = 10;
+        int size = 5; // Current size of the array
+
+        int newPosition = 2; // Index where you want to insert the new element
+        int newElement = 7; // Element to be inserted
+
+        // Shift elements to make space for the new element
+        for (int i = size - 1; i >= newPosition; i--) {
+            array[i + 1] = array[i];
+        }
+
+        // Insert the new element at the specified position
+        array[newPosition] = newElement;
+
+         size++;// Update the size of the array
+
+        // Print the updated array
+        for (int i = 0; i < size; i++) {
+            System.out.print(array[i] + " ");
+        }
+
+	}
+}
+
 
