@@ -390,5 +390,47 @@ class Codechef
 	}
 }
 
+## Coding problem - 1 You are given the following as a user input: First line contains the integer N ,The second line contains N space separated integers. The third line contains an integer X.You need to insert X as the 1st and last element and output the list.Your list will now have N + 2 elements.
+
+import java.util.Scanner;
+
+class Codechef {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Read the number of elements
+        int N = sc.nextInt();
+        int[] arr = new int[N];
+
+        // Read N space-separated integers
+        for (int i = 0; i < N; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        // Read the integer X
+        int x = sc.nextInt();
+
+        // Create a new array with N+2 size
+        int[] result = new int[N + 2];
+
+        // Insert X at the beginning
+        result[0] = x;
+
+        // Copy original elements
+        for (int i = 0; i < N; i++) {
+            result[i + 1] = arr[i];
+        }
+
+        // Insert X at the end
+        result[N + 1] = x;
+
+        // Print the modified array
+        for (int num : result) {
+            System.out.print(num + " ");
+        }
+
+        sc.close();
+    }
+}
 
 
