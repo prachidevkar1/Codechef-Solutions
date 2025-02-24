@@ -432,5 +432,47 @@ class Codechef {
         sc.close();
     }
 }
+## You are given the following as a user input: First line contains the integer N and X The second line contains N space separated integers (List 1). The third line contains X space separated integers (List 2).
+You need to merge the lists such that your output is a single list - List 1 + List 2 + List 1.
+mport java.util.Scanner;
+
+class Codechef {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Read N and X
+        int N = sc.nextInt();
+        int X = sc.nextInt();
+
+        // Read List 1
+        int[] list1 = new int[N];
+        for (int i = 0; i < N; i++) {
+            list1[i] = sc.nextInt();
+        }
+
+        // Read List 2
+        int[] list2 = new int[X];
+        for (int i = 0; i < X; i++) {
+            list2[i] = sc.nextInt();
+        }
+
+        // Print List 1
+        for (int num : list1) {
+            System.out.print(num + " ");
+        }
+
+        // Print List 2
+        for (int num : list2) {
+            System.out.print(num + " ");
+        }
+
+        // Print List 1 again
+        for (int num : list1) {
+            System.out.print(num + " ");
+        }
+
+        sc.close();
+    }
+}
 
 
