@@ -559,3 +559,34 @@ class Codechef
 	}
 }
 
+
+
+
+
+## Write a program that uses a do-while loop to find the factorial of a given input number.
+
+
+import java.util.Scanner;
+
+class Codechef
+{
+	public static void main (String[] args)
+{ 
+
+     
+     Scanner sc =new Scanner (System.in);
+      int n = sc.nextInt();
+      int factorial=1;
+       int i=n;
+      
+      do{
+          factorial= factorial*i;
+          i--;
+      }
+      while(i>0);
+        System.out.println(factorial);
+
+	}
+}
+
+
