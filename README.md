@@ -589,4 +589,16 @@ class Codechef
 	}
 }
 
+## array of string 
+class Codechef {
+    public static void main (String[] args) {
+        String[] array = {"1", "ab", "3", "name"}; // Array with string values
+        
+        // Using a for loop
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]); // Print each element on a new line
+        }
+    }
+}
+
 
