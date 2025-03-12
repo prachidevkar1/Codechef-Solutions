@@ -601,4 +601,16 @@ class Codechef {
     }
 }
 
+## Let us define a variable N that accepts integer inputs. Output the same variable N
 
+import java.util.Scanner;
+
+class Codechef
+{
+	public static void main (String[] args)
+	{
+        Scanner objName = new Scanner(System.in);
+        int N = objName.nextInt();
+		System.out.println(N);
+	}
+}
