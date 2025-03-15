@@ -618,22 +618,48 @@ class Codechef
 
 
 ## Chef wants to become fit for which he decided to walk to the office and return home by walking. It is known that Chef's office is X km away from his home. If his office is open on 5 days in a week, find the number of kilometers Chef travels through office trips in a week. Input Format First line will contain T, number of test cases. Then the test cases follow. Each test case contains of a single line consisting of single integer  X
-import java.util.*;
-class CodeChef{
-    public static void main(String[]args)
-    {
-        Scanner sc= new Scanner (System.in);
-        int t =sc.nextInt();
+mport java.util.*;
 
-        for(i=0;i<t;i++);
-        {
-            int x= sc.nextInt();
-            int totalDistance= 2*x*5;
-	    System.out.println(totalDistance);
-            
+class CodeChef {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt(); // Number of test cases
+
+        for (int i = 0; i < t; i++) { // Loop for each test case
+            int x = sc.nextInt(); // Read distance X
+            int totalDistance = 2 * x * 5; // Calculate total distance
+            System.out.println(totalDistance); // Print the result
         }
         
+        sc.close(); // Close the scanner
+    }
+}
+## Second Max of Three Numbers Problem Statement Write a program that accepts sets of three numbers, and prints the second-maximum number among the three. Input First line contains the number of triples, N The next N lines which follow each have three space separated integers.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+import java.util.*;
+
+class Codechef {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         
+        int N = sc.nextInt(); // Number of test cases
+
+        for (int i = 0; i < N; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int c = sc.nextInt();
+
+            // Find the second maximum using sorting
+            int[] arr = {a, b, c};
+            Arrays.sort(arr);
+
+            System.out.println(arr[1]); // Print the second maximum
+        }
+
+        sc.close();
     }
 }
 
