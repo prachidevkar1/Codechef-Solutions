@@ -682,5 +682,26 @@ public class Main {
         }
     }
 }
+## Find Remainder Write a program to find the remainder when an integer A is divided by an integer B.Input The first line contains an integer T, the total number of test cases. Then T lines follow, each line contains two Integers A and B.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt(); // number of test cases
+        
+        for (int i = 0; i < t; i++) // run t times
+        {
+            int A = sc.nextInt();
+            int b = sc.nextInt();
+            int remainder = A % b;
+            System.out.println(remainder);
+        }
+    }
+}
 
 
