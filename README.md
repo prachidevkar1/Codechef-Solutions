@@ -704,4 +704,30 @@ class Codechef
     }
 }
 
+## Candy Store Chef has started working at the candy store. The store has  100 chocolates in total. Chef’s daily goal is to sell X chocolates. For each chocolate sold, he will get 1 rupee. However, if Chef exceeds his daily goal, he gets 2 rupees per chocolate for each extra chocolate.If Chef sells Y chocolates in a day, find the total amount he made. Input Format The first line of input will contain a single integer T, denoting the number of test cases. Each test case consists of two space-separated integers X and Y — the daily goal of Chef, and the number of chocolates he actually sells.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt(); // Number of test cases
+
+        for (int i = 0; i < T; i++) {
+            int X = sc.nextInt(); // Daily goal
+            int Y = sc.nextInt(); // Chocolates sold
+
+            int total;
+            if (Y <= X) {
+                total = Y;
+            } else {
+                total = X + (Y - X) * 2;
+            }
+
+            System.out.println(total);
+        }
+
+        sc.close();
+    }
+}
 
