@@ -730,4 +730,24 @@ public class Main {
         sc.close();
     }
 }
+## Scalene TriangleGiven A,B, and C as the sides of a triangle, find whether the triangle is scalene. Note: A triangle is said to be scalene if all three sides of the triangle are distinct. It is guaranteed that the sides represent a valid triangle. Input Format The first line of input will contain a single integer T denoting the number of test cases. Each test case consists of three space-separated integers A,B and C — the length of the three sides of the triangle.
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
+
+        while (t-- > 0) {
+            int a = scanner.nextInt();
+            int b = scanner.nextInt();
+            int c = scanner.nextInt();
+
+            if (a != b && b != c && a != c) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        }
+    }
+}
