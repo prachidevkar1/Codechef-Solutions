@@ -2,7 +2,7 @@
 
 # 🚀 CodeChef Problem Solutions
 
-This repository contains my solutions to various **CodeChef** problems. Each solution is implemented in **Java/C++/Python**, and the problem statements are documented here.
+This repository contains my solutions to various **CodeChef** problems. Each solution is implemented in **Java**, and the problem statements are documented here.
 
 ---
 
@@ -36,6 +36,18 @@ class Codechef
 	}
 }
 
+OR USING FOR LOOP
+class OddNumber {
+    public static void main(String[] args) {
+        for (int i = 10; i <= 20; i++) {
+            if (i % 2 != 0) {
+                System.out.println("Odd Number: " + i);
+            } else {
+                System.out.println("Even Number: " + i);
+            }
+        }
+    }
+}
 
 
 
